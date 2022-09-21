@@ -1,5 +1,23 @@
-.center{
-    position:relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+    border: 2px solid #006100;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: blue;
-    font-size: 72pt;
-}
+    font-size:144pt;
+    text-align: center;
+  }
