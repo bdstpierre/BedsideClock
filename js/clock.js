@@ -83,13 +83,16 @@ function showTime(){
         hour = hour % 12;
         MV = "PM";
     }
+    if(hour == 0){
+        hour=12;
+    }
 
     //hour = ("0" + hour).slice(-2);
     min = ("0" + min).slice(-2);
     sec = ("0" + sec).slice(-2);
 
     //document.getElementById("clock").innerHTML = "<b>Today is:</b> "+day+" "+date+"th "+month+" "+year+", "+hour+":"+min+":"+sec+" "+MV;
-    document.getElementById("clock").innerHTML = hour+":"+min+":"+sec+" "+MV;
+    document.getElementById("clock").innerHTML = hour+":"+min+" "+MV;
 }
 
 setInterval(showTime, 1000);

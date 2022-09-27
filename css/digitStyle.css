@@ -8,16 +8,19 @@
   .container {
     position: relative;
     height: 100%;
-    border: 2px solid #006100;
+    border: 2px solid black;
   }
   
   .center {
+    font-family: 'technologyitalic', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: blue;
-    font-size:144pt;
+    color: #66FFCC	;
+    font-size:188pt;
     text-align: center;
   }
